@@ -1,0 +1,28 @@
+,Category,Classification
+0,COSMETIC,Tertiary
+1,Cosmetic,Tertiary
+2,Diagnosis,Primary
+3,Filling,Primary
+4,FILLING,Primary
+5,Implant,Tertiary
+6,IMPLANT,Tertiary
+7,ORTHODONTIC,Tertiary
+8,Orthodontics,Tertiary
+9,ORTHODONTICS,Tertiary
+10,OTHER,Not Classified
+11,PEDODONTIC TREATMENT,Secondary
+12,Pedodontic Treatment,Secondary
+13,PEDODONTICS,Secondary
+14,Periodontics,Secondary
+15,PERIODONTICS,Secondary
+16,Prosthetics,Secondary
+17,PROSTHETICS,Secondary
+18,Radiology,Primary
+19,RCT,Secondary
+20,SCALINGS,Primary
+21,Scalings,Primary
+22,SURGICAL PROCEDURE,Secondary
+23,Surgical Procedures,Secondary
+24,SURGICAL PROCEDURES,Secondary
+25,TREATMENT,Not Classified
+26,,Not Classified

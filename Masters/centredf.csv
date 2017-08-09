@@ -1,0 +1,56 @@
+,Centre,Region,Cluster,Cluster Head,Hospital
+0,BLKH,North,BLKH,TBD,Yes
+1,CANTT,North,West Delhi,TBD,No
+2,CHL,Indore,Indore,,Yes
+3,DLFPH1,North,Gur2,Sandhya,No
+4,DWARKA,North,West Delhi,TBD,No
+5,FBD14,North,FBD14,TBD,No
+6,GK,North,South Delhi,Aditi,No
+7,GUJ,North,North Delhi,TBD,No
+8,GURGAON14,North,Gur1,Aikta,Yes
+9,GURGAON43,North,Gur2,Sandhya,No
+10,GURGAON56,North,Gur1,,Yes
+11,GURGAONCAH,North,Gur1,Aikta,Yes
+12,GZBCAH,North,Noida,TBD,Yes
+13,IPURAM,North,Noida,TBD,No
+14,JANAKPURI,North,West Delhi,TBD,No
+15,LDHFH,Punjab,Punjab,Dev,Yes
+16,MEERA,North,North Delhi,TBD,No
+17,MOHALIFH,Punjab,Punjab,Dev,Yes
+18,NOIDA41,North,Noida,TBD,No
+19,NOIDAFH,North,Noida,TBD,Yes
+20,PATIALACAH,Punjab,Punjab,Dev,Yes
+21,RAJOURI,North,Discontinued,,No
+22,ROHINI,North,North Delhi,TBD,No
+23,SDA,North,South Delhi,Aditi,No
+24,YOJNA,North,Noida,TBD,No
+25,AECS,South,AECS,Main clinic under Regis,No
+26,BELL,South,South East Bangalore,Vani,No
+27,BTM,South,Central,Juhi,No
+28,CARD,South,South Bangalore,Suji,Yes
+29,DOML,South,East Bangalore,Tulika,No
+30,ECITY,South,South Bangalore,Suji,Yes
+31,HOSUR,South,South Bangalore,Suji,No
+32,HSR,South,Central,Juhi,No
+33,ITPL,South,AECS,Under Alex,Yes
+34,JAYA,South,Central,Juhi,No
+35,JBN,South,East Bangalore,Tulika,No
+36,JPN,South,Central,Juhi,No
+37,KAMM,South,East Bangalore,Tulika,No
+38,LFORD,South,CBD,Adarsha,No
+39,MALL,South,North Bangalore,Vandana,No
+40,MSH,South,South Bangalore,Suji,No
+41,NBEL,South,South East Bangalore,Vani,No
+42,RAJA,South,North Bangalore,Vandana,No
+43,SANJ,South,North Bangalore,Vandana,No
+44,SARJ,South,South East Bangalore,Vani,No
+45,VIDY,South,North Bangalore,Vandana,No
+46,WHIT,South,AECS,Under Saurabh,No
+47,YELA,South,North Bangalore,Vandana,Yes
+48,Fortis La Femme,South,CBD,Adarsha,No
+49,ASTRTPARK,South,East Bangalore,,Yes
+50,FORTISBLR,South,CBD,,Yes
+51,ASTRYELA,South,North Bangalore,,No
+52,ASTRBLRD,South,East Bangalore,,Yes
+53,VV,North,South Delhi,,No
+54,ASTRYELAold,South,North Bangalore,,No
