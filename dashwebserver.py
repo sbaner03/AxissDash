@@ -5,6 +5,8 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
+import plotly.figure_factory as ff
+
 
 
 app = dash.Dash()
@@ -19,18 +21,6 @@ centrelistoptions = [{'label': i,'value':i} for i in centrelist]
 df, fig = printfigs(analysis, indicator = 'Received',grplist = ['Year','Month','Classification'],
               regionlist = ['All'],clusterlist = ['All'],centrelist = ['All'])
 
-
-
-def generate_table(dataframe, max_rows=5):
-    return html.Table(
-        # Header
-        [html.Tr([html.Th(col) for col in dataframe.columns])] +
-
-        # Body
-        [html.Tr([
-            html.Td(dataframe.iloc[i][col]) for col in dataframe.columns
-        ]) for i in range(min(len(dataframe), max_rows))]
-    )
 
 markdown_text = '''
 Online Anaysis Module
@@ -60,16 +50,7 @@ app.layout = html.Div(children=[
         multi=True
     ),
     dcc.Graph(id='example-graph-1',figure = fig),
-    dcc.Graph(id='example-graph-2',figure = fig),
-    html.Table(id = 'table', children=
-        # Header
-        [html.Tr([html.Th(col) for col in dataframe.columns])] +
-        # Body
-        [html.Tr([
-            html.Td(dataframe.iloc[i][col]) for col in dataframe.columns
-        ]) for i in range(min(len(dataframe), max_rows))]
-    )
-
+    dcc.Graph(id='example-graph-2',figure = fig)
 ])
 
 @app.callback(
@@ -78,7 +59,7 @@ app.layout = html.Div(children=[
     Input(component_id='cluster_selection', component_property='value'),
     Input(component_id='clinic_selection', component_property='value')]
 )
-def update_output_div1(region,cluster,clinic):
+def update_output_fig1(region,cluster,clinic):
 
     df, fig = printfigs(analysis, indicator = 'Received',grplist = ['Year','Month','Classification'],
                   regionlist = region,clusterlist = cluster,centrelist = clinic)
@@ -90,10 +71,11 @@ def update_output_div1(region,cluster,clinic):
     Input(component_id='cluster_selection', component_property='value'),
     Input(component_id='clinic_selection', component_property='value')]
 )
-def update_output_div2(region,cluster,clinic):
+def update_output_fig2(region,cluster,clinic):
 
     df, fig = printfigs(analysis, indicator = 'Reg.No',grplist = ['Year','Month','Classification'],
                   regionlist = region,clusterlist = cluster,centrelist = clinic)
     return fig
+
 
 app.run_server(debug=True)
