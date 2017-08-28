@@ -56,13 +56,15 @@ def printfigs (analysis,indicator = 'Received',grplist = ['Year','Month','Classi
         printingtext = 'Revenue in Rs Lacs'
 
     layout = go.Layout(
-        title='2017 Axiss Report of {}'.format(printingtext),
+        title='{}'.format(printingtext),
         annotations=[dict(x=str(xi),y=yi,
                  text=str(yi),
                  xanchor='center',
                  yanchor='bottom',
                  showarrow=False,
             ) for xi, yi in zip(monthdf['Month'], monthdf[indicator])],
+        legend=dict(
+                orientation="h"),
         barmode='stack'
     )
 

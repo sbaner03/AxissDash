@@ -45,7 +45,7 @@ class Axissutils:
 
     def getpatientvintage(self,activitydate,regdate,newthreshold):
         try:
-            patvintage = (activitydate-dateconv(regdate,'%d-%m-%Y')).days
+            patvintage = (activitydate-datetime.strptime(regdate,'%d-%m-%Y')).days
             if patvintage>=newthreshold:
                 return 'Old'
             else:
@@ -60,10 +60,10 @@ class Axissutils:
             return 'Youth 13-25'
         elif 26<=x<=40:
             return 'Mid 26-40'
-        elif 41<=x<=80:
-            return 'Elder 40-80'
-        elif x>=81:
-            return 'Old >=81'
+        elif 41<=x<=60:
+            return 'Upper 41-60'
+        elif x>=61:
+            return 'Older >=60'
         else:
             return 'Check'
 
